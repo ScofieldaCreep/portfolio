@@ -10,7 +10,7 @@ const Card: FC<CardProps> = ({ title, children, className }) => {
   return (
     <div
       className={cn(
-        'relative, bg-primary-background w-full h-fit rounded-2xl border border-border p-6 text-primary-foreground overflow-hidden text-white',
+        'relative, w-full h-fit rounded-2xl border border-border p-6 text-primary-foreground overflow-hidden text-white',
         className
       )}
     >

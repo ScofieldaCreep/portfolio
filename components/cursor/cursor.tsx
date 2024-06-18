@@ -7,10 +7,10 @@ interface CursorProps {
 const Cursor: FC<CursorProps> = ({ color }) => {
   return (
     <AnimatedCursor
-      innerSize={8}
-      outerSize={15}
+      innerSize={10}
+      outerSize={18}
       innerScale={1}
-      outerScale={2}
+      outerScale={3}
       outerAlpha={0}
       innerStyle={{
         backgroundColor: color

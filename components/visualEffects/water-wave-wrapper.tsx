@@ -1,11 +1,12 @@
+'use client';
 import { FC, ReactNode } from 'react';
 import WaterWave from 'react-water-wave';
 
 interface WaterWaveWrapperProps {
   imageUrl: string;
-  dropRadius: number;
-  perturbance: number;
-  resolution: number;
+  dropRadius: string;
+  perturbance: string;
+  resolution: string;
   children: () => ReactNode;
 }
 
