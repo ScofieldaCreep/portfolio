@@ -2,15 +2,15 @@
 import { FC, ReactNode, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
-interface MagneticWrapperProps {
+
+interface MagnetciWrapperProps {
   className?: string;
   children: ReactNode;
 }
 
-const MagneticWrapper: FC<MagneticWrapperProps> = ({ className, children }) => {
+const MagnetciWrapper: FC<MagnetciWrapperProps> = ({ className, children }) => {
   const ref = useRef<HTMLDivElement>(null);
   const [position, setPosition] = useState({ x: 0, y: 0 });
-  const { x, y } = position;
   const handleMouse = (e: MouseEvent) => {
     const { clientX, clientY } = e;
     const boundingRect = ref.current?.getBoundingClientRect();
@@ -18,21 +18,20 @@ const MagneticWrapper: FC<MagneticWrapperProps> = ({ className, children }) => {
       const { width, height, top, left } = boundingRect;
       const middleX = clientX - (left + width / 2);
       const middleY = clientY - (top + height / 2);
-      setPosition({
-        x: middleX,
-        y: middleY
-      });
+      setPosition({ x: middleX, y: middleY });
     }
   };
   const reset = () => {
     setPosition({ x: 0, y: 0 });
   };
+
+  const { x, y } = position;
   return (
     <motion.div
       className={cn('relative', className)}
       ref={ref}
       animate={{ x, y }}
-      transition={{ type: 'spring', stiffness: 70, damping: 8, mass: 0.08 }}
+      transition={{ type: 'spring', stiffness: 150, damping: 15, mass: 0.1 }}
       onMouseMove={handleMouse}
       onMouseLeave={reset}
     >
@@ -41,5 +40,5 @@ const MagneticWrapper: FC<MagneticWrapperProps> = ({ className, children }) => {
   );
 };
 
-export default MagneticWrapper;
+export default MagnetciWrapper;
 
