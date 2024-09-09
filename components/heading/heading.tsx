@@ -1,6 +1,6 @@
-import { FC } from 'react';
-import SvgCurve from '../visualEffects/svg-curve';
-import { HeadingAnimatedSvg } from './heading-animated-svg';
+import { FC } from "react";
+import SvgCurve from "../visualEffects/svg-curve";
+import { HeadingAnimatedSvg } from "./heading-animated-svg";
 
 interface HeadingProps {
   number: string;
@@ -36,4 +36,3 @@ const Heading: FC<HeadingProps> = ({ number, title_1, title_2 }) => {
 };
 
 export default Heading;
-

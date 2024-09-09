@@ -9,7 +9,7 @@ export default function ScrollDown() {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           style={{
-            transform: 'translate3d(1.13422e-12px, -2.19519e-13px, 0px)'
+            transform: "translate3d(1.13422e-12px, -2.19519e-13px, 0px)",
           }}
         >
           <path

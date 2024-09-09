@@ -4,18 +4,23 @@ const config: Config = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
-    './sections/**/*.{js,ts,jsx,tsx,mdx}'
+    './sections/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}'
   ],
   theme: {
     extend: {
+      fontFamily: {
+        oswald: ['var(--font-oswald)'],
+        pixel: ['var(--font-pixel)']
+      },
+      screens: { xs: '520px', '2xl': '1400px' },
       colors: {
         primary: {
-          background: 'rgba(255,255,255,.05)',
+          background: 'rgba(255, 255, 255, .05)',
           foreground: '#fff'
         },
         secondary: {
-          background: 'rgba(255,255,255,.03)',
+          background: 'rgba(255, 255, 255, .03)',
           foreground: 'rgba(255,255,255,0.4)'
         },
         blue: {
@@ -31,16 +36,11 @@ const config: Config = {
         },
         border: 'rgb(255 255 255 / 0.05)'
       },
-      fontFamily: {
-        oswald: ['var(--font-oswald)'],
-        pixel: ['var(--font-pixel)']
-      },
       backgroundImage: {
         grain: 'url(/assets/images/background/noisy-background.png)'
       },
       animation: {
-        // "noisy-bg": "noise 1s step(2) infinite",
-        'noisy-bg': 'noise 10s steps(10) infinite'
+        'noisy-bg': 'noise 1s steps(2) infinite'
       },
       keyframes: {
         noise: {
@@ -79,9 +79,8 @@ const config: Config = {
           }
         }
       }
-    },
-    plugins: []
-  }
+    }
+  },
+  plugins: []
 };
 export default config;
-

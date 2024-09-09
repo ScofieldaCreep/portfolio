@@ -1,7 +1,7 @@
-import { FaInstagram, FaLinkedinIn } from 'react-icons/fa';
-import { RiYoutubeFill } from 'react-icons/ri';
-import { SiUdemy } from 'react-icons/si';
 import Button from './button';
+import { SiLeetcode } from 'react-icons/si';
+import { FaLinkedinIn, FaInstagram, FaGithub } from 'react-icons/fa6';
+
 export default function Socials() {
   return (
     <div className="flex items-center flex-wrap gap-3">
@@ -13,26 +13,26 @@ export default function Socials() {
     </div>
   );
 }
+
 const socials = [
   {
-    icon: <SiUdemy className="w-4 h-4" />,
-    link: 'https://www.udemy.com/user/mohamed-hajji-25',
-    username: 'Mohmed Hajji'
-  },
-  {
-    icon: <RiYoutubeFill className="w-5 h-5" />,
-    link: 'https://www.youtube.com/channel/UC-w5hcICVX5IzP8537CYSBg',
-    username: 'Dev7'
+    icon: <FaGithub className="w-5 h-5" />,
+    link: 'https://github.com/scofieldacreep',
+    username: 'scofieldacreep'
   },
   {
     icon: <FaLinkedinIn className="w-5 h-5" />,
-    link: 'https://www.linkedin.com/in/medhajji/',
-    username: 'Mohamed HAJJI'
+    link: 'https://www.linkedin.com/in/chizhang111',
+    username: 'Chi Zhang'
   },
   {
     icon: <FaInstagram className="w-5 h-5" />,
-    link: 'https://www.instagram.com/med_hajji7/',
-    username: 'Mohamed HAJJI'
+    link: 'https://www.instagram.com/zcccofield/',
+    username: 'Chi Zhang'
+  },
+  {
+    icon: <SiLeetcode className="w-5 h-5" />,
+    link: 'https://leetcode.com/scofieldacreep/',
+    username: 'scofieldacreep'
   }
 ];
-

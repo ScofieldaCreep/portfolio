@@ -1,6 +1,6 @@
-import { cn } from '@/lib/utils';
-import Link from 'next/link';
-import { FC, ReactNode } from 'react';
+import { cn } from "@/lib/utils";
+import Link from "next/link";
+import { FC, ReactNode } from "react";
 
 interface ButtonProps {
   children: ReactNode;
@@ -9,7 +9,7 @@ interface ButtonProps {
   className?: string;
 }
 
-const Button: FC<ButtonProps> = ({ children, link, isIcon, className }) => {
+const Button: FC<ButtonProps> = ({ children, className, isIcon, link }) => {
   return (
     <>
       {link ? (
@@ -38,9 +38,9 @@ const ButtonBody: FC<ButtonBodyProps> = ({ children, isIcon, className }) => {
     <div className="cursor-pointer flex-none w-auto h-full">
       <div
         className={cn(
-          'flex items-center justify-center gap-2 bg-primary-background rounded-full select-none whitespace-nowrap text-primary-foreground text-sm font-medium hover:bg-white/[0.1] transition-colors duration-100 ',
+          "flex items-center justify-center gap-2  bg-primary-background rounded-full select-none whitespace-nowrap text-primary-foreground text-sm font-medium hover:bg-white/[0.1] transition-colors duration-100",
           className,
-          isIcon ? 'h-10 w-10' : 'h-full w-max px-3 py-2'
+          isIcon ? "h-10 w-10" : "h-full w-max px-3 py-2"
         )}
       >
         {children}
@@ -50,4 +50,3 @@ const ButtonBody: FC<ButtonBodyProps> = ({ children, isIcon, className }) => {
 };
 
 export default Button;
-

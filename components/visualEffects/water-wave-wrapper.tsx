@@ -1,6 +1,6 @@
-'use client';
-import { FC, ReactNode } from 'react';
-import WaterWave from 'react-water-wave';
+"use client";
+import { FC, ReactNode } from "react";
+import WaterWave from "react-water-wave";
 
 interface WaterWveWrapperProps {
   imageUrl: string;
@@ -15,7 +15,7 @@ const WaterWaveWrapper: FC<WaterWveWrapperProps> = ({
   dropRadius,
   perturbance,
   resolution,
-  children
+  children,
 }) => {
   return (
     <WaterWave
@@ -30,4 +30,3 @@ const WaterWaveWrapper: FC<WaterWveWrapperProps> = ({
 };
 
 export default WaterWaveWrapper;
-

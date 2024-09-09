@@ -1,7 +1,7 @@
-'use client';
-import { FC, ReactNode, useRef, useState } from 'react';
-import { motion } from 'framer-motion';
-import { cn } from '@/lib/utils';
+"use client";
+import { FC, ReactNode, useRef, useState } from "react";
+import { motion } from "framer-motion";
+import { cn } from "@/lib/utils";
 
 interface MagnetciWrapperProps {
   className?: string;
@@ -28,10 +28,10 @@ const MagnetciWrapper: FC<MagnetciWrapperProps> = ({ className, children }) => {
   const { x, y } = position;
   return (
     <motion.div
-      className={cn('relative', className)}
+      className={cn("relative", className)}
       ref={ref}
       animate={{ x, y }}
-      transition={{ type: 'spring', stiffness: 150, damping: 15, mass: 0.1 }}
+      transition={{ type: "spring", stiffness: 150, damping: 15, mass: 0.1 }}
       onMouseMove={handleMouse}
       onMouseLeave={reset}
     >
@@ -41,4 +41,3 @@ const MagnetciWrapper: FC<MagnetciWrapperProps> = ({ className, children }) => {
 };
 
 export default MagnetciWrapper;
-

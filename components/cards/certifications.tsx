@@ -1,39 +1,50 @@
 import React from 'react';
-import Card from '../ui/card'; // Corrected the import path
+import Card from '../ui/card';
 import { Timeline, TimelineItem } from '../ui/timeline';
 
-// Define the certifications data
-const CertificationsData = [
+// 定义证书数据的接口
+interface Certification {
+  date: string;
+  title: string;
+  subTitle: string;
+}
+
+// 证书数据
+const certificationsData: Certification[] = [
   {
-    date: '2021',
-    title: 'Red Hat Certified Engineer (RHCE)',
-    subTitle: 'RedHat'
+    date: '2024',
+    title: 'AWS Certified Developer - Associate (DVA-C02)',
+    subTitle: 'Amazon Web Services'
   },
   {
-    date: '2020',
-    title: 'Huawei Certified Network Developer', // Corrected spelling
-    subTitle: 'Huawei' // Corrected spelling
-  },
-  {
-    date: '2020',
-    title: 'Cisco Certified DevNet Associate',
-    subTitle: 'Cisco'
+    date: '2000',
+    title: 'Born Certification',
+    subTitle: 'China'
   }
 ];
 
-export default function CertificationsCard() {
+// CertificationsCard 组件
+const CertificationsCard: React.FC = () => {
   return (
     <Card title="My Certifications">
       <Timeline>
-        {CertificationsData.map((certification, i) => (
-          <TimelineItem
-            key={i}
-            date={certification.date}
-            title={certification.title}
-            subTitle={certification.subTitle}
-          />
+        {certificationsData.map((cert, index) => (
+          <TimelineItem key={index} date={cert.date} title={cert.title} subTitle={cert.subTitle} />
         ))}
+        {/* 添加一个额外的注释 */}
       </Timeline>
+      <p
+        className="
+          text-sm               /* 小号字体 */
+          text-secondary-foreground /* 次要前景色 */
+          italic                /* 斜体 */
+          mt-4                  /* 上边距 16px */
+        "
+      >
+        How I wish I could have more...
+      </p>
     </Card>
   );
-}
+};
+
+export default CertificationsCard;
