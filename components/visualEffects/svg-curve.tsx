@@ -1,5 +1,5 @@
-"use client";
-import { useEffect, useRef } from "react";
+'use client';
+import { useEffect, useRef } from 'react';
 
 export default function SvgCurve() {
   const path = useRef<SVGPathElement | null>(null);
@@ -67,22 +67,18 @@ export default function SvgCurve() {
       setPath(progress);
     };
 
-    window.addEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
 
     // Clean up the event listener on component unmount
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener('resize', handleResize);
     };
   }, [progress]);
 
   const setPath = (value: number) => {
     const width = window.innerWidth * 0.7;
 
-    path.current?.setAttributeNS(
-      null,
-      "d",
-      `M 0 50 Q ${width * x} ${50 + value} ${width} 50`
-    );
+    path.current?.setAttributeNS(null, 'd', `M 0 50 Q ${width * x} ${50 + value} ${width} 50`);
   };
   /*
 
