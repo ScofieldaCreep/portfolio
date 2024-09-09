@@ -18,8 +18,8 @@ export default function BackgroundCard() {
           predetermined path. <br />
           <br />
           Despite my personal inclinations, I found myself enrolled in
-          <span className="text-white">&nbsp;China's top Engineering Management program&nbsp;</span>
-          &mdash; a choice that reflected my mother's unfulfilled ambitions more than my own passions. <br />
+          <span className="text-white">&nbsp;China&apos;s top Engineering Management program&nbsp;</span>
+          &mdash; a choice that reflected my mother&apos;s unfulfilled ambitions more than my own passions. <br />
           <br />
           As I delved into this field, I encountered a world where
           <span className="text-white underline">creativity often took a backseat to convention</span>. The stark
