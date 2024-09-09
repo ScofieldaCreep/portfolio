@@ -1,4 +1,4 @@
-import { Heading } from '@/components/heading/heading';
+import Heading from '@/components/heading/heading';
 import React from 'react';
 import { featuredData } from '@/data';
 import FeaturedCard from '@/components/cards/featured/featured-card';

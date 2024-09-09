@@ -6,7 +6,7 @@ import ExperienceCard from '@/components/cards/experience';
 import MeCard from '@/components/cards/me';
 import ResumeCard from '@/components/cards/resume';
 import StackCard from '@/components/cards/stack';
-import { Heading } from '@/components/heading/heading';
+import Heading from '@/components/heading/heading';
 import GalleryCard from '@/components/cards/gallery';
 import React from 'react';
 
