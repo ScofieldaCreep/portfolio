@@ -7,6 +7,10 @@
     {
       "source": "/blog",
       "destination": "https://chi-notion-blog.vercel.app/blog"
+    },
+    {
+      "source": "_next/static/:path*",
+      "destination": "https://chi-notion-blog.vercel.app/_next/static/:path*"
     }
   ]
 }
