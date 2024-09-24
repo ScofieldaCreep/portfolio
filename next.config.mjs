@@ -6,4 +6,26 @@ const nextConfig = {
   }
 };
 
+// next.config.js
+module.exports = {
+  async rewrites() {
+    return {
+      beforeFiles: [
+        {
+          source: '/blog/:path*',
+          destination: 'https://chi-notion-blog.vercel.app/:path*'
+        },
+        {
+          source: '/blog',
+          destination: 'https://chi-notion-blog.vercel.app/blog'
+        },
+        {
+          source: '/_next/static/:path*',
+          destination: 'https://chi-notion-blog.vercel.app/_next/static/:path*'
+        }
+      ]
+    };
+  }
+};
+
 export default nextConfig;
