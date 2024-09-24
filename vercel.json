@@ -7,7 +7,7 @@
     {
       "source": "/_next/static/css/:path*",
       "destination": "https://chi-notion-blog.vercel.app/_next/static/css/:path*"
-    }
+    },
     {
       "source": "/_next/static/chunks/:path*",
       "destination": "https://chi-notion-blog.vercel.app/_next/static/chunks/:path*"
