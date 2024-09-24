@@ -6,14 +6,13 @@ const nextConfig = {
     ignoreBuildErrors: true
   },
   async redirects() {
-    return {
-      beforeFiles: [
-        {
-          source: '/blog',
-          destination: 'http://blog.chizhang.love/'
-        }
-      ]
-    };
+    return [
+      {
+        source: '/blog',
+        destination: 'http://blog.chizhang.love/',
+        permanent: true // 使用永久重定向
+      }
+    ];
   }
 };
 
