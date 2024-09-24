@@ -13,8 +13,8 @@ const nextConfig = {
           destination: 'http://chi-notion-blog.vercel.app/:path*'
         },
         {
-          source: '/blog',
-          destination: 'http://chi-notion-blog.vercel.app/'
+          source: '/article1',
+          destination: 'https://chizhang.love/article-1'
         },
         {
           source: '/_next/static/:path*',
