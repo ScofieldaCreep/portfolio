@@ -10,11 +10,7 @@ const nextConfig = {
       beforeFiles: [
         {
           source: '/blog/:path*',
-          destination: 'http://chi-notion-blog.vercel.app/:path*'
-        },
-        {
-          source: '/article1',
-          destination: 'https://chizhang.love/article-1'
+          destination: 'http://chi-notion-blog.vercel.app/blog/:path*'
         },
         {
           source: '/_next/static/:path*',
