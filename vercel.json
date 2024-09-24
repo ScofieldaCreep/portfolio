@@ -3,6 +3,10 @@
     {
       "source": "/blog/:path*",
       "destination": "https://chi-notion-blog.vercel.app/:path*"
+    },
+    {
+      "source": "/blog",
+      "destination": "https://chi-notion-blog.vercel.app/blog"
     }
   ]
 }
