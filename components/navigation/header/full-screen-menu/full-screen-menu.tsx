@@ -81,6 +81,6 @@ const navItems = [
   },
   {
     title: 'Blog',
-    href: '/Blog'
+    href: '/blog'
   }
 ];
