@@ -2,7 +2,7 @@
     "rewrites": [
       {
         "source": "/blog/:path*",
-        "destination": "https://your-blog-project.vercel.app/:path*"
+        "destination": "https://chi-notion-blog.vercel.app/:path*"
       }
     ]
   }
