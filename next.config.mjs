@@ -18,7 +18,7 @@ const nextConfig = {
         },
         {
           source: '/_next/static/:path*',
-          destination: 'http://chi-notion-blog.vercel.app/_next/blog/static/:path*'
+          destination: 'http://chi-notion-blog.vercel.app/_next/static/:path*'
         }
       ]
     };
