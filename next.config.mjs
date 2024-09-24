@@ -5,13 +5,9 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true
   },
-  async rewrites() {
+  async redirects() {
     return {
       beforeFiles: [
-        {
-          source: '/blog/:path*',
-          destination: 'http://blog.chizhang.love/:path*'
-        },
         {
           source: '/blog',
           destination: 'http://blog.chizhang.love/'
