@@ -14,11 +14,11 @@ const nextConfig = {
         },
         {
           source: '/blog',
-          destination: 'http://chi-notion-blog.vercel.app'
+          destination: 'http://chi-notion-blog.vercel.app/blog'
         },
         {
           source: '/_next/static/:path*',
-          destination: 'http://chi-notion-blog.vercel.app/_next/static/:path*'
+          destination: 'http://chi-notion-blog.vercel.app/blog/_next/static/:path*'
         }
       ]
     };
