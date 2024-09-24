@@ -1,10 +1,6 @@
 {
   "rewrites": [
     {
-      "source": "/blog/_next/static/:path*",
-      "destination": "/_next/static/:path*"
-    },
-    {
       "source": "/blog/:path*",
       "destination": "https://chi-notion-blog.vercel.app/:path*"
     }
