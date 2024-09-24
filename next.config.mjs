@@ -15,10 +15,6 @@ const nextConfig = {
         {
           source: '/blog',
           destination: 'http://blog.chizhang.love/'
-        },
-        {
-          source: '/_next/static/:path*',
-          destination: 'http://blog.chizhang.love/_next/static/:path*'
         }
       ]
     };
