@@ -5,6 +5,7 @@ import './globals.css';
 import { cn } from '../lib/utils';
 import GrainEffect from '@/components/visualEffects/grain-effect';
 import Cursor from '@/components/cursor/cursor';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 // 字体定义
 const bricolageGrotesque = Bricolage_Grotesque({

@@ -1,166 +1,166 @@
-import NextJsImg from "@/public/assets/images/stack/nextjs.png";
-import ReactJsImg from "@/public/assets/images/stack/reactjs.png";
-import NodeJsImg from "@/public/assets/images/stack/nodejs.png";
-import ExpressJsImg from "@/public/assets/images/stack/expressjs.png";
-import FramerMotionImg from "@/public/assets/images/stack/framer-motion.png";
-import GsapImg from "@/public/assets/images/stack/gsap.png";
-import NxImg from "@/public/assets/images/stack/nx.png";
-import JavascriptImg from "@/public/assets/images/stack/js.png";
-import TypescriptImg from "@/public/assets/images/stack/ts.png";
-import TailwindImg from "@/public/assets/images/stack/tailwind.png";
-import HtmlImg from "@/public/assets/images/stack/html.png";
-import CssImg from "@/public/assets/images/stack/css.png";
-import SvelteImg from "@/public/assets/images/stack/svelte.png";
-import SassImg from "@/public/assets/images/stack/sass.png";
-import ShadcnUiImg from "@/public/assets/images/stack/shadcnui.png";
-import MaterialUiImg from "@/public/assets/images/stack/materialui.png";
-import DaisyUiImg from "@/public/assets/images/stack/daisyui.png";
-import FastifyPng from "@/public/assets/images/stack/fastify.png";
-import NestJsImg from "@/public/assets/images/stack/nestjs.jpg";
+import NextJsImg from '@/public/assets/images/stack/nextjs.png';
+import ReactJsImg from '@/public/assets/images/stack/reactjs.png';
+import NodeJsImg from '@/public/assets/images/stack/nodejs.png';
+import ExpressJsImg from '@/public/assets/images/stack/expressjs.png';
+import FramerMotionImg from '@/public/assets/images/stack/framer-motion.png';
+import GsapImg from '@/public/assets/images/stack/gsap.png';
+import NxImg from '@/public/assets/images/stack/nx.png';
+import JavascriptImg from '@/public/assets/images/stack/js.png';
+import TypescriptImg from '@/public/assets/images/stack/ts.png';
+import TailwindImg from '@/public/assets/images/stack/tailwind.png';
+import HtmlImg from '@/public/assets/images/stack/html.png';
+import CssImg from '@/public/assets/images/stack/css.png';
+import SvelteImg from '@/public/assets/images/stack/svelte.png';
+import SassImg from '@/public/assets/images/stack/sass.png';
+import ShadcnUiImg from '@/public/assets/images/stack/shadcnui.png';
+import MaterialUiImg from '@/public/assets/images/stack/materialui.png';
+import DaisyUiImg from '@/public/assets/images/stack/daisyui.png';
+import FastifyPng from '@/public/assets/images/stack/fastify.png';
+import NestJsImg from '@/public/assets/images/stack/nestjs.jpg';
 
 export const stackData = [
   {
-    title: "Basics",
+    title: 'Basics',
     stack: [
       {
         id: 0,
-        title: "Html 5",
+        title: 'Html 5',
         image: HtmlImg,
-        bgColor: "",
+        bgColor: ''
       },
       {
         id: 1,
-        title: "Css 3",
+        title: 'Css 3',
         image: CssImg,
-        bgColor: "",
+        bgColor: ''
       },
       {
         id: 2,
-        title: "Javascript",
+        title: 'Javascript',
         image: JavascriptImg,
-        bgColor: "#F0DB4F",
+        bgColor: '#F0DB4F'
       },
       {
         id: 3,
-        title: "Typescript",
+        title: 'Typescript',
         image: TypescriptImg,
-        bgColor: "#3179C7",
-      },
-    ],
+        bgColor: '#3179C7'
+      }
+    ]
   },
   {
-    title: "Frontend FWs",
+    title: 'Frontend FWs',
     stack: [
       {
         id: 0,
-        title: "React js",
+        title: 'React js',
         image: ReactJsImg,
-        bgColor: "",
+        bgColor: ''
       },
       {
         id: 1,
-        title: "Next js",
+        title: 'Next js',
         image: NextJsImg,
-        bgColor: "",
+        bgColor: ''
       },
       {
         id: 2,
-        title: "Svelte",
+        title: 'Svelte',
         image: SvelteImg,
-        bgColor: "",
-      },
-    ],
+        bgColor: ''
+      }
+    ]
   },
   {
-    title: "Styling / FWs",
+    title: 'Styling / FWs',
     stack: [
       {
         id: 0,
-        title: "Sass",
+        title: 'Sass',
         image: SassImg,
-        bgColor: "",
+        bgColor: ''
       },
       {
         id: 1,
-        title: "Tailwind css",
+        title: 'Tailwind css',
         image: TailwindImg,
-        bgColor: "",
+        bgColor: ''
       },
       {
         id: 2,
-        title: "Shadcn/ui",
+        title: 'Shadcn/ui',
         image: ShadcnUiImg,
-        bgColor: "#000",
+        bgColor: '#000'
       },
       {
         id: 3,
-        title: "Material ui",
+        title: 'Material ui',
         image: MaterialUiImg,
-        bgColor: "",
+        bgColor: ''
       },
       {
         id: 4,
-        title: "Daisy ui",
+        title: 'Daisy ui',
         image: DaisyUiImg,
-        bgColor: "",
-      },
-    ],
+        bgColor: ''
+      }
+    ]
   },
   {
-    title: "Aimation",
+    title: 'Aimation',
     stack: [
       {
         id: 0,
-        title: "Framer motion",
+        title: 'Framer motion',
         image: FramerMotionImg,
-        bgColor: "",
+        bgColor: ''
       },
       {
         id: 1,
-        title: "Gsap",
+        title: 'Gsap',
         image: GsapImg,
-        bgColor: "",
-      },
-    ],
+        bgColor: ''
+      }
+    ]
   },
   {
-    title: "Backend / FWs",
+    title: 'Backend / FWs',
     stack: [
       {
         id: 0,
-        title: "Node js",
+        title: 'Node js',
         image: NodeJsImg,
-        bgColor: "",
+        bgColor: ''
       },
       {
         id: 1,
-        title: "Express js",
+        title: 'Express js',
         image: ExpressJsImg,
-        bgColor: "",
+        bgColor: ''
       },
       {
         id: 1,
-        title: "Fastify",
+        title: 'Fastify',
         image: FastifyPng,
-        bgColor: "",
+        bgColor: ''
       },
       {
         id: 1,
-        title: "Nest js",
+        title: 'Nest js',
         image: NestJsImg,
-        bgColor: "#D31D58",
-      },
-    ],
+        bgColor: '#D31D58'
+      }
+    ]
   },
   {
-    title: "Monorepoos",
+    title: 'Monorepoos',
     stack: [
       {
         id: 0,
-        title: "NX Monorepoo",
+        title: 'NX Monorepoo',
         image: NxImg,
-        bgColor: "#f5f5f5",
-      },
-    ],
-  },
+        bgColor: '#f5f5f5'
+      }
+    ]
+  }
 ];

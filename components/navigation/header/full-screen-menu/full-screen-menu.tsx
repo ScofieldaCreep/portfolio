@@ -1,10 +1,10 @@
-import { motion } from "framer-motion";
-import { menuSlide } from "./animation";
-import Curve from "./curve";
-import Profile from "@/components/ui/profile";
-import NavLink from "./nav-link";
-import Link from "next/link";
-import MenuCard from "./menu-card";
+import { motion } from 'framer-motion';
+import { menuSlide } from './animation';
+import Curve from './curve';
+import Profile from '@/components/ui/profile';
+import NavLink from './nav-link';
+import Link from 'next/link';
+import MenuCard from './menu-card';
 
 export default function FullScreenMenu() {
   return (
@@ -23,10 +23,7 @@ export default function FullScreenMenu() {
       </div>
       {/*Menu and card*/}
       <div className="absolute bottom-32 w-full lg:px-[5%]">
-        <div
-          className="grid relative"
-          style={{ gridTemplateColumns: "1fr 500px" }}
-        >
+        <div className="grid relative" style={{ gridTemplateColumns: '1fr 500px' }}>
           <div className="pl-4 flex flex-col justify-end">
             {navItems.map((item, index) => (
               <NavLink key={index} data={{ ...item, index }} />
@@ -67,23 +64,23 @@ export default function FullScreenMenu() {
 
 const navItems = [
   {
-    title: "Home",
-    href: "/",
+    title: 'Home',
+    href: '/'
   },
   {
-    title: "Featured",
-    href: "/#featured",
+    title: 'Featured',
+    href: '/#featured'
   },
   {
-    title: "About",
-    href: "/#about",
+    title: 'About',
+    href: '/#about'
   },
   {
-    title: "Projects",
-    href: "/#projects",
+    title: 'Projects',
+    href: '/#projects'
   },
   {
-    title: "Contact",
-    href: "/#contact",
-  },
+    title: 'Blog',
+    href: '/Blog'
+  }
 ];

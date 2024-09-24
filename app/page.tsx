@@ -11,7 +11,7 @@ const WaterWaveWrapper = dynamic(() => import('@/components/visualEffects/water-
 
 export default function Home() {
   return (
-    <WaterWaveWrapper imageUrl="" dropRadius="3" perturbance="3" resolution="2048">
+    <WaterWaveWrapper imageUrl="" dropRadius="2" perturbance="2" resolution="1024">
       {() => (
         <div className="pb-8">
           <LandingSection />
