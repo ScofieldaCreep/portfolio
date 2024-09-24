@@ -10,15 +10,15 @@ const nextConfig = {
       beforeFiles: [
         {
           source: '/blog/:path*',
-          destination: 'http://website2.com/blog/:path*'
+          destination: 'http://chi-notion-blog.vercel.app/:path*'
         },
         {
           source: '/blog',
-          destination: 'http://website2.com/blog'
+          destination: 'http://chi-notion-blog.vercel.app/'
         },
         {
           source: '/_next/static/:path*',
-          destination: 'http://website2.com/_next/static/:path*'
+          destination: 'http://chi-notion-blog.vercel.app/_next/static/:path*'
         }
       ]
     };
