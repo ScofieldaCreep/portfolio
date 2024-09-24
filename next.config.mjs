@@ -14,17 +14,11 @@ const nextConfig = {
         },
         {
           source: '/blog',
-          destination: 'http://chi-notion-blog.vercel.app/blog'
+          destination: 'http://chi-notion-blog.vercel.app'
         },
         {
           source: '/_next/static/:path*',
           destination: 'http://chi-notion-blog.vercel.app/_next/static/:path*'
-        }
-      ],
-      afterFiles: [
-        {
-          source: '/:path((?!$).*)', // 排除根路径
-          destination: 'http://chi-notion-blog.vercel.app/:path*'
         }
       ]
     };
