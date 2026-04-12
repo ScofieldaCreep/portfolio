@@ -6,7 +6,7 @@ import { galleryImages } from "@/data";
 import Image from "next/image";
 export default function Gallery() {
   return (
-    <div className="h-[550px] sm:h-[650px] md:h-full 2xl:h-[750px] w-full">
+    <div className="w-full">
       <Swiper
         modules={[Pagination, Autoplay]}
         pagination={{
@@ -23,7 +23,7 @@ export default function Gallery() {
             <Image
               src={img.img}
               alt=""
-              className="object-cover w-full h-full object-left-top"
+              className="w-full h-auto object-contain rounded-2xl"
             />
           </SwiperSlide>
         ))}

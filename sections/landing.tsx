@@ -16,7 +16,7 @@ const landingContent = {
     'one line of code at a time.'
   ],
   connectButtonText: 'Connect',
-  timeZone: 'America/New_York'
+  timeZone: 'America/Los_Angeles'
 };
 
 const LandingSection: React.FC = () => {
@@ -33,7 +33,7 @@ const LandingSection: React.FC = () => {
 const ConnectButton: React.FC = () => (
   <div className="absolute bottom-36 left-10 z-20 md:hidden">
     <MagneticWrapper>
-      <FancyButton text={landingContent.connectButtonText} icon={<FaArrowRight />} />
+      <FancyButton text={landingContent.connectButtonText} icon={<FaArrowRight />} href="#contact" />
     </MagneticWrapper>
   </div>
 );

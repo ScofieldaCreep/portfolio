@@ -17,8 +17,8 @@ export default function Socials() {
 const socials = [
   {
     icon: <FaGithub className="w-5 h-5" />,
-    link: 'https://github.com/scofieldacreep',
-    username: 'scofieldacreep'
+    link: 'https://github.com/chichasescheese',
+    username: 'chichasescheese'
   },
   {
     icon: <FaLinkedinIn className="w-5 h-5" />,
@@ -32,7 +32,7 @@ const socials = [
   },
   {
     icon: <SiLeetcode className="w-5 h-5" />,
-    link: 'https://leetcode.com/scofieldacreep/',
-    username: 'scofieldacreep'
+    link: 'https://leetcode.com/chichasescheese/',
+    username: 'chichasescheese'
   }
 ];

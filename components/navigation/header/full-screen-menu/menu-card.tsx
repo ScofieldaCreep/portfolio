@@ -42,10 +42,6 @@ const myLinks = [
     link: '#about'
   },
   {
-    title: 'Courses',
-    link: '#about'
-  },
-  {
     title: 'EXPERIENCE',
     link: '#about'
   },

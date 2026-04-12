@@ -38,36 +38,26 @@ export default function ExperienceCard() {
 
 const experiencesData = [
   {
+    date: 'Feb 2025 — Present',
+    company: 'PayPal',
+    title: 'Software Engineer',
+    description: [
+      'Led American Express transaction fee calculation system using Snowflake and PostgreSQL, managing billions in daily transaction volume',
+      'Spearheaded Braintree\'s net settlement project, enabling next-day fund transfers and optimizing cash flow efficiency',
+      'Participated in legacy system refactoring, migrating Ruby and Kotlin business logic to Snowflake and Java',
+      'Enhanced system observability by implementing transaction tracing pipeline using Sentry and Datadog'
+    ],
+    tag: 'Full-time'
+  },
+  {
     date: 'May 2024 — Aug 2024',
-    company: 'Paypal',
+    company: 'PayPal',
     title: 'Software Engineer Intern',
     description: [
-      'Developed B2B backend service using Kotlin and Spring Boot',
-      'Implemented Kafka message producers within Kubernetes',
-      'Optimized data processing logic with Airflow DAGs and Spark jobs',
-      'Scripted data migration from AWS S3 to GCP Cloud Storage'
-    ],
-    tag: 'Intern'
-  },
-  {
-    date: 'Mar 2022 — Aug 2022',
-    company: 'ByteDance',
-    title: 'Software Engineer Intern',
-    description: [
-      'Processed large-scale user activity data (300GB/day) using Hadoop and Spark',
-      'Collaborated on anti-fraud model training and algorithm A/B tests',
-      'Developed real-time data processing platform using Flink and Kafka'
-    ],
-    tag: 'Intern'
-  },
-  {
-    date: 'Jul 2021 — Oct 2021',
-    company: 'Qihoo 360',
-    title: 'Software Developer Intern',
-    description: [
-      'Integrated Restful APIs for smart camera data platform',
-      'Developed logic module archetypes in Python for smart camera system',
-      'Wrote unit tests using PyTest for quality assurance'
+      'Developed B2B backend service using Kotlin and Spring Boot to calculate transaction fees and generate compliance reports',
+      'Built efficient Kafka message queues within Kubernetes for distributed event processing',
+      'Optimized transaction verification and settlement workflows with Airflow DAGs and Spark jobs',
+      'Migrated data infrastructure from AWS S3 to GCP Cloud Storage using Scala'
     ],
     tag: 'Intern'
   }

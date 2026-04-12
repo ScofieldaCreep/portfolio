@@ -16,7 +16,7 @@ export default function MeCard() {
         <div className="absolute top-[65%] space-y-2">
           <Tag text="What's good 👋" className="rounded-tl-2xl rounded-tr-2xl rounded-br-2xl rounded-bl-2xl" />
           <Tag text="I'm Chi Zhang" className="rounded-tr-2xl rounded-br-2xl rounded-bl-2xl" />
-          <Tag text="Full stack developer 💻" className="rounded-tl-2xl rounded-tr-xl rounded-br-2xl rounded-bl-2xl" />
+          <Tag text="Software Engineer 💻" className="rounded-tl-2xl rounded-tr-xl rounded-br-2xl rounded-bl-2xl" />
           <Tag text="Goal Oriented Fast Learner - AKA Robot 🤖" className="rounded-3xl" />
         </div>
       </div>

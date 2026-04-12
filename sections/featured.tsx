@@ -8,12 +8,12 @@ const MainFeatured = featuredData[0];
 
 export default function FeaturedSection() {
   return (
-    <section className="pt-24 px-3 lg:px-8">
+    <section id="featured" className="pt-24 px-3 lg:px-8">
       {/* 标题组件 */}
       <Heading number="01" title_1="Featured" title_2="Work" />
 
       {/* 主要特色项目卡片 */}
-      <FeaturedCard active title={MainFeatured.title} tag={MainFeatured.tag} video={MainFeatured.video} />
+      <FeaturedCard active title={MainFeatured.title} tag={MainFeatured.tag} video={MainFeatured.video} image={MainFeatured.image} link={MainFeatured.link} />
 
       {/* 可展开的其他特色项目 */}
       <div className="mt-24">

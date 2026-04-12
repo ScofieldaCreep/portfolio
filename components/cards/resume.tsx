@@ -7,7 +7,7 @@ import Socials from '../ui/socials';
 import Link from 'next/link';
 
 const introText = [
-  'Incoming SDE2 @ Paypal Core Transaction Team.',
+  'Software Engineer @ PayPal Core Transaction Team.',
   'Curiosity level: Cat with 9 lives (and daily knowledge anxiety)',
   'Jack of all trades: Management, Economics, and turning myself into a &quot;product&quot;',
   'INTP: Initially skeptical of MBTI, now a walking stereotype (but in a cool way)'

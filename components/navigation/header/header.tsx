@@ -29,12 +29,12 @@ export default function Header() {
       <Profile />
       <div className="hidden md:inline">
         <MagnetciWrapper>
-          <FancyButon text="Let's talk" icon={<FaArrowRight />} />
+          <FancyButon text="Let's talk" icon={<FaArrowRight />} href="#contact" />
         </MagnetciWrapper>
       </div>
 
-      {/*Toggle button*/}
-      {showToggle && <ToggleButton open={open} setOpen={setOpen} />}
+      {/*Toggle button - always visible when menu is open */}
+      {(showToggle || open) && <ToggleButton open={open} setOpen={setOpen} />}
 
       {/*Full screen menu*/}
       <AnimatePresence mode="wait">
